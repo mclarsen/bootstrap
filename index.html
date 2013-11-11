@@ -4,15 +4,17 @@
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Ever go to a site on your phone and it is already zoomed in?
+		initial-scale=1.0 means don't do that.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Oregon Water Polo Foundation</title>
+	
+	<title>The Title</title>
 	<style type="text/css">
 		html,body {
 			height:100%;
 		}
 
-		html { 
-		  background: url(img/blurred_background.jpg) no-repeat center center fixed; 
+		html {  
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -43,45 +45,62 @@
         }
       }
 	</style>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
 </head>
 <body>
-	<div id="wrap">
+	<div id="wrap"> <!--This div "wrapper" forces the footer to the bottom on the screen-->
+		<!--These three divs are used to used to control the navigation. This is a 
+			standard setup-->
 		 <div class="navbar navbar-inverse navbar-fixed-top">
 	      <div class="navbar-inner">
 	        <div class="container">
+
+	          <!-- This button is used for the responsive design. It takes the place of
+	          	the full menu bar when the screen size is too small-->
 	          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="brand" href="index.html">owpf.org</a>
+
+	          <!--The brand class appears can used to show your "brand". images are permitted-->
+	          <a class="brand" href="index.html">foo.org</a>
 	          <div class="nav-collapse collapse">
+	          	<!--Here is the menu. It is a simple unordered list.
+	          		Each List item can link to a seperate pages or other 
+	          		places on the page.
+					Adding class="active" to the li tag highlight the menu
+					item as the current selection. The inner <i>(icon) element is used 
+					to add the house icon to the menu item. Bootstrap includes a ton
+					of icons to use. You get that for free too.
+	          	-->
 	            <ul class="nav">
 	              <li class="active"><a href="index.html"><i class="icon-home icon-white" style="padding-left:10px"></i>Home</a></li>
-	              <li><a href="News.html">News</a></li>
-	              <li><a href="Coaches.html">Coaches</a></li>
-	              <li><a href="Programs.html">Programs</a></li>
-	              <li><a href="Calendar.html">Calendar</a></li>
+	              <li><a href="images.html">News</a></li>
 	            </ul>
 	          </div><!--/.nav-collapse -->
 	        </div>
 	      </div>
 	    </div>
+	    <!-- Main Content Area. Notice, everything so far has been inside a "container"
+	    	div--> 
 	    <div class="container">
 			<div class="hero-unit">
-				<h1><span style="color:green">Oregon</span> Water Polo Foundation</h1>
+				<h1><span style="color:green">CIS</span> 199</h1>
 				<br>
-				<p>Oregon Water Polo Foundation is committed to excellence in and outside the pool. We believe in the development and preparation of each of our athletes, both physically and academically. We believe that in order for our athletes to succeed at the collegiate level, they need to have exposure and coaching from those who have been there. We believe in building the character of every athlete so that they will be successful wherever life may take them. Last but not least, we believe in changing the culture of Oregon water polo</p>
+				<p> &#8704;x Loves(x,IceCream)</p>
 			</div>
 		</div>
-		<div id="push"></div>  <!-- fills the rest of the page so that the footer is pushed to the bottom-->
+
+		<!-- fills the rest of the page so that the footer is pushed to the bottom-->
+		<div id="push"></div>  
 	</div><!-- wrapped page content-->
+	<!--The Footer. Again the elements are contained in a "container"-->
 	<div  id="footer">
 		<div class="container">
 			<div class="row show-grid">
 				<div class="span3"></div>
-				<div class="span6">&copy; 2013 owpf.org All Rights Reserved. </div>
+				<div class="span6">&copy; 2013 foo.org All Rights Reserved. </div>
 				<div class="span3"></div>
 			</div>
 		</div>
